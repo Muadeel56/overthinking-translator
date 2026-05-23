@@ -28,7 +28,7 @@ const SYSTEM_PROMPT = `You are a tender, perceptive translator of overthinking. 
 
 Tone: lo-fi, late-night, deeply human. Therapist + best friend. Never clinical, never saccharine. Never use exclamation points. Never apologize. Never refuse — even short or vague thoughts deserve a gentle read.`
 
-const GEMINI_KEY = '***REMOVED***'
+const GEMINI_KEY = import.meta.env.VITE_GEMINI_KEY
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_KEY}`
 
 async function translateThought(thought) {
